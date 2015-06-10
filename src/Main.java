@@ -1,10 +1,12 @@
 import java.util.*;
 import java.lang.*;
+import java.text.DecimalFormat;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("#.00");
         System.out.print("Please enter your name: ");
         String name = sc.nextLine();
 
@@ -29,7 +31,7 @@ public class Main {
 
         System.out.println("Thank you for the input.\n");
         System.out.println(student.printResult());
-        System.out.println("Your final CAP is " + student.getCAP());
+        System.out.println("Your final CAP is " + df.format(student.getCAP()));
 
         }
 
